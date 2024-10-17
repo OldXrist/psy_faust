@@ -185,3 +185,25 @@ h2 {
 .card-price {
   font-size: 42px;
 }
+
+.accordion {
+  background: none;
+}
+
+.accordion-item {
+  background: none;
+  border: 1px solid #E0E0E0;
+}
+
+.accordion-button::after{
+  fill: #E0E0E0;
+}
+
+.accordion-button {
+  background: none;
+  color: #e0e0e0;
+}
+
+.accordion h2 {
+  padding: 0.5rem;
+}
