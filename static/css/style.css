@@ -236,20 +236,36 @@ h2 {
   padding: 0.5rem;
 }
 
-.contacts li {
-  font-size: 20px;
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.contacts .card {
-  background: none;
-  border: none;
-  color: #E0E0E0;
+.contact-card-row {
+  display: flex;
+  gap: 20px;
 }
 
-.contacts .card li {
-  background: none;
-  border: none;
-  border-bottom: 1px solid #E0E0E0;
+.contact-card {
+  padding: 20px;
+  min-width: 300px;
+  min-height: 200px;
+  border: 1px solid #E4B7A0;
+}
+
+.contact-card:hover {
+  background-color: #E4B7A0;
+  color: #e0e0e0;
+}
+
+.contact-card {
+  text-decoration: none;
+  transition: all 500ms ease;
+}
+
+.contact-card h5:hover {
+  text-decoration: none;
 }
 
 .list-group-item {
