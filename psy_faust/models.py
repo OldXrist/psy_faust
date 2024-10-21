@@ -4,7 +4,7 @@ from django.db import models
 
 class Qualifications(models.Model):
     title = models.CharField(verbose_name='Название', max_length=50)
-    img = models.ImageField(verbose_name='Картинка')
+    img = models.ImageField(verbose_name='Картинка', upload_to='static/img/')
 
     def __str__(self):
         return self.title
