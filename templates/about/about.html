@@ -51,15 +51,11 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="{% static '/img/bg-2.jpg' %}" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="{% static '/img/bg.jpg' %}" class="d-block w-100" alt="..." style="overflow: hidden">
-            </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
+            {% for qual in qualifications %}
+                <div class="carousel-item active">
+                  <img src="{{ qual.img }}" class="d-block w-100" alt="{{ qual.title }}">
+                </div>
+            {% endfor %}
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
