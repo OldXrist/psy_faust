@@ -6,18 +6,18 @@
     <div class="container">
         <div class="contact-cards">
             <div class="contact-card-row">
-                <a href="#" class="contact-card">
+                <a href="{{ contacts.telegram }}" target="_blank" class="contact-card">
                     <h5>Telegram</h5>
                 </a>
-                <a href="#" class="contact-card">
+                <a href="{{ contacts.whatsapp }}" target="_blank" class="contact-card">
                     <h5>Whatsapp</h5>
                 </a>
             </div>
             <div class="contact-card-row">
-                <a href="#" class="contact-card">
+                <a href="mailto:{{ contacts.email }}" class="contact-card">
                     <h5>Email</h5>
                 </a>
-                <a href="#" class="contact-card">
+                <a href="tel:{{ contacts.phone }}" class="contact-card">
                     <h5>Номер телефона</h5>
                 </a>
             </div>

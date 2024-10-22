@@ -29,8 +29,8 @@ class FAQ(models.Model):
 class Contacts(models.Model):
     telegram = models.CharField(verbose_name='Telegram', max_length=50)
     whatsapp = models.CharField(verbose_name='Whatsapp', max_length=50)
-    Email = models.CharField(verbose_name='EMail', max_length=50)
-    Phone = models.CharField(verbose_name='Телефон', max_length=50)
+    email = models.CharField(verbose_name='EMail', max_length=50)
+    phone = models.CharField(verbose_name='Телефон', max_length=50)
 
     def __str__(self):
         return str(self.id)
