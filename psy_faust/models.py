@@ -24,3 +24,17 @@ class FAQ(models.Model):
     class Meta:
         verbose_name = 'FAQ'
         verbose_name_plural = 'FAQ'
+
+
+class Contacts(models.Model):
+    telegram = models.CharField(verbose_name='Telegram', max_length=50)
+    whatsapp = models.CharField(verbose_name='Whatsapp', max_length=50)
+    Email = models.CharField(verbose_name='EMail', max_length=50)
+    Phone = models.CharField(verbose_name='Телефон', max_length=50)
+
+    def __str__(self):
+        return self.id
+
+    class Meta:
+        verbose_name = 'Контакт'
+        verbose_name_plural = 'Контакты'
