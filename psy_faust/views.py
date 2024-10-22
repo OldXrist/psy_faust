@@ -1,7 +1,8 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from .models import Qualifications
+from django.shortcuts import render
+from .models import Qualifications, FAQ
 
 
 def index(request):
     qualifications = Qualifications.objects.all()
-    return render(request, 'index.html', {'qualifications': qualifications})
+    faq = FAQ.objects.all()
+    return render(request, 'index.html', {'qualifications': qualifications, 'FAQ': faq})
