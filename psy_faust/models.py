@@ -33,7 +33,7 @@ class Contacts(models.Model):
     Phone = models.CharField(verbose_name='Телефон', max_length=50)
 
     def __str__(self):
-        return self.id
+        return str(self.id)
 
     class Meta:
         verbose_name = 'Контакт'
