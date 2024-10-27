@@ -118,16 +118,6 @@ h2 {
 
 }
 
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
-  }
-
-  .hero p {
-    font-size: 20px;
-  }
-}
-
 .features {
   display: flex;
   flex-direction: column;
@@ -337,7 +327,7 @@ h2 {
   display: flex;
   font-size: 50px;
   height: 100%;
-  padding: 30rem 3rem 10rem;
+  padding: 15rem 3rem 10rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -358,8 +348,12 @@ h2 {
 }
 
 @media (max-width: 992px) {
-  h2 {
+  .hero h1 {
     font-size: 70px;
+  }
+
+  h2 {
+    font-size: 60px;
   }
 
   .block {
@@ -378,10 +372,7 @@ h2 {
   .services .card-group {
     flex-direction: column;
     align-items: center;
-  }
-
-  .services .card {
-    max-width: 50%;
+    padding: 0 4rem;
   }
 
   .header-dt {
@@ -394,6 +385,11 @@ h2 {
 
   .header-control {
     display: unset;
+  }
+
+  .contact-card {
+    width: -webkit-fill-available;
+    min-width: auto;
   }
 }
 
