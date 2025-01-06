@@ -61,7 +61,7 @@ a:hover {
 
 h2 {
   padding-bottom: 1.5rem;
-  font-size: 80px;
+  font-size: 72px;
 }
 
 .cases-cluster {
@@ -91,7 +91,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/static/img/bg.jpg");
+  background-image: url("/static/img/vp.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -111,11 +111,6 @@ h2 {
   margin: 5px 0 0 0;
   font-size: 38px;
   opacity: 0.8;
-}
-
-.hero button {
-  margin: 5px 0 0 0;
-
 }
 
 .features {
@@ -221,6 +216,10 @@ h2 {
 
 .card-desc {
   text-align: center;
+}
+
+.card-sub {
+  color: #b2b0b0;
 }
 
 .services .card-group {
