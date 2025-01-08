@@ -74,6 +74,10 @@ h2 {
   justify-content: space-between;
 }
 
+.cases-cluster ul li {
+  color: #E4B7A0;
+}
+
 .cases-cluster li {
   font-size: 1rem;
 }
@@ -142,6 +146,7 @@ h2 {
 .features .feature-item p {
   font-size: 1rem;
   margin-bottom: 0;
+  color: #E4B7A0;
 }
 
 .about-me-content {
@@ -155,7 +160,7 @@ h2 {
 }
 
 .about-me-content p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .timeline {
@@ -182,6 +187,15 @@ h2 {
   height: 11px;
   width: 11px;
   content: "";
+}
+
+.timeline h5 {
+  font-size: 1.5rem;
+}
+
+.timeline p {
+  font-size: 1rem;
+  color: #E4B7A0;
 }
 
 .services .card {
@@ -375,14 +389,6 @@ h2 {
 
   .timeline {
     max-width: unset;
-  }
-
-  .timeline h5 {
-    font-size: 1.5rem;
-  }
-
-  .timeline p {
-    font-size: 1rem;
   }
 
   .services .card-group {
