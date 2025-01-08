@@ -15,7 +15,7 @@ class Qualifications(models.Model):
 
 
 class FAQ(models.Model):
-    title = models.CharField(verbose_name='Вопрос', max_length=50)
+    title = models.CharField(verbose_name='Вопрос', max_length=150)
     content = models.TextField(verbose_name='Содержание', max_length=500)
 
     def __str__(self):
