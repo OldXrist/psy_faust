@@ -11,7 +11,7 @@ body {
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 3rem;
 }
 
 .nav-link, .btn {
@@ -47,7 +47,7 @@ a:hover {
 
 .btn:hover {
   background: #E4B7A0;
-  color: #E0E0E0;
+  color: #1C1F26;
 }
 
 .block {
@@ -61,7 +61,11 @@ a:hover {
 
 h2 {
   padding-bottom: 1.5rem;
-  font-size: 72px;
+  font-size: 4rem;
+}
+
+.underline {
+  border-bottom: 1px solid #E4B7A0;
 }
 
 .cases-cluster {
@@ -71,7 +75,7 @@ h2 {
 }
 
 .cases-cluster li {
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .cases-cluster svg:hover {
@@ -101,16 +105,15 @@ h2 {
   z-index: 3;
 }
 
-.hero h1 {
-  margin: 0;
-  font-size: 81px;
-  font-weight: 500;
+.hero p {
+  font-size: 2rem;
+  color: #E4B7A0;
 }
 
-.hero p {
-  margin: 5px 0 0 0;
-  font-size: 38px;
-  opacity: 0.8;
+.hero h1 {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 500;
 }
 
 .features {
@@ -126,37 +129,18 @@ h2 {
 }
 
 .features .feature-item .icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto 20px;
-  font-size: 32px;
+  font-size: 4rem;
+  color: #E4B7A0;
 }
 
 .features .feature-item h3 {
   font-weight: 700;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  font-size: 22px;
-  transition: 0.3s;
-  position: relative;
-}
-
-.features .feature-item h3:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 2px;
-  bottom: 0;
-  left: calc(50% - 25px);
+  font-size: 1.5rem;
 }
 
 .features .feature-item p {
-  line-height: 24px;
+  font-size: 1rem;
   margin-bottom: 0;
 }
 
@@ -168,6 +152,10 @@ h2 {
 
 .about-me-content img {
   max-width: 40%;
+}
+
+.about-me-content p {
+  font-size: 1.5rem;
 }
 
 .timeline {
@@ -199,10 +187,15 @@ h2 {
 .services .card {
   padding: 3rem 1.5rem;
   border-radius: 0;
-  border: 1px solid;
+  border: 1px solid #E4B7A0;
   background: none;
   align-items: center;
   color: #E0E0E0;
+}
+
+.services .card:hover {
+  background-color: #262a33;
+  transition: 0.5s;
 }
 
 .services .card button {
@@ -214,12 +207,22 @@ h2 {
   border-radius: 0;
 }
 
+.card-title {
+  font-size: 1.5rem;
+}
+
 .card-desc {
   text-align: center;
+  font-size: 1rem;
 }
 
 .card-sub {
   color: #b2b0b0;
+  font-size: 1rem;
+}
+
+.card .btn {
+  font-size: 1rem;
 }
 
 .services .card-group {
@@ -229,7 +232,7 @@ h2 {
 }
 
 .services .card-price {
-  font-size: 42px;
+  font-size: 2.5rem;
   color: #E4B7A0;
 }
 
@@ -245,6 +248,7 @@ h2 {
 .accordion-button {
   background: none;
   color: #E0E0E0;
+  font-size: 1.5rem;
 }
 
 .accordion-button:focus {
@@ -262,6 +266,7 @@ h2 {
 
 .accordion-body {
   color: #E0E0E0;
+  font-size: 1rem;
 }
 
 .accordion h2 {
@@ -288,12 +293,16 @@ h2 {
 
 .contact-card:hover {
   background-color: #E4B7A0;
-  color: #e0e0e0;
+  color: #1C1F26;
 }
 
 .contact-card {
   text-decoration: none;
   transition: all 500ms ease;
+}
+
+.contact-card h5 {
+  font-size: 1.5rem;
 }
 
 .contact-card h5:hover {
@@ -366,6 +375,14 @@ h2 {
 
   .timeline {
     max-width: unset;
+  }
+
+  .timeline h5 {
+    font-size: 1.5rem;
+  }
+
+  .timeline p {
+    font-size: 1rem;
   }
 
   .services .card-group {
