@@ -39,6 +39,10 @@ footer .nav-link {
   text-align: right;
 }
 
+footer .col-md-2 {
+  width: 200px;
+}
+
 a {
   color: #E4B7A0;
 }
@@ -107,7 +111,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/static/img/vp.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/static/img/vp.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -169,6 +173,22 @@ h2 {
 
 .about-me-content p {
   font-size: 1.25rem;
+}
+
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about-me-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.about-me-btn .btn {
+  font-size: 1.5rem;
 }
 
 .timeline {
@@ -379,11 +399,11 @@ h2 {
 
 @media (max-width: 992px) {
   .hero h1 {
-    font-size: 70px;
+    font-size: 3.5rem;
   }
 
   h2 {
-    font-size: 60px;
+    font-size: 3rem;
   }
 
   .block {
@@ -393,6 +413,14 @@ h2 {
   .features .row {
     flex-direction: column;
     align-items: center;
+  }
+
+  .about-me-content {
+    flex-direction: column;
+  }
+
+  .about-me-content img {
+    max-width: unset;
   }
 
   .timeline {
