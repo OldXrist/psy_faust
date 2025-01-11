@@ -366,11 +366,22 @@ h2 {
 
 .header-control {
   display: none;
+}
+
+.header-control svg {
   position: fixed;
   top: 30px;
   right: 30px;
   z-index: 5;
   transition: all 500ms ease;
+}
+
+.header-control img {
+  max-width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
 }
 
 .header-mb-container {
@@ -398,6 +409,14 @@ h2 {
 }
 
 @media (max-width: 992px) {
+  .about-me-content {
+    flex-direction: column;
+  }
+
+  .about-me-content img {
+    max-width: unset;
+  }
+
   .header-dt {
     display: none !important;
   }
@@ -408,6 +427,12 @@ h2 {
 
   .header-control {
     display: unset;
+  }
+
+  .services .card-group {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4rem;
   }
 }
 
@@ -437,22 +462,8 @@ h2 {
     align-items: center;
   }
 
-  .about-me-content {
-    flex-direction: column;
-  }
-
-  .about-me-content img {
-    max-width: unset;
-  }
-
   .timeline {
     max-width: unset;
-  }
-
-  .services .card-group {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 4rem;
   }
 
   .contact-card {
