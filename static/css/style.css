@@ -398,6 +398,20 @@ h2 {
 }
 
 @media (max-width: 992px) {
+  .header-dt {
+    display: none !important;
+  }
+
+  .header-mb {
+    display: unset;
+  }
+
+  .header-control {
+    display: unset;
+  }
+}
+
+@media (max-width: 768px) {
   .hero h1 {
     font-size: 3rem;
   }
@@ -413,7 +427,7 @@ h2 {
   .hero {
     align-items: flex-end;
   }
-  
+
   .block {
     min-height: auto;
   }
@@ -439,18 +453,6 @@ h2 {
     flex-direction: column;
     align-items: center;
     padding: 0 4rem;
-  }
-
-  .header-dt {
-    display: none !important;
-  }
-
-  .header-mb {
-    display: unset;
-  }
-
-  .header-control {
-    display: unset;
   }
 
   .contact-card {
