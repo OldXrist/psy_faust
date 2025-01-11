@@ -126,6 +126,11 @@ h2 {
   color: #E4B7A0;
 }
 
+.hero a {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
 h1 {
   margin: 0;
   font-size: 4rem;
