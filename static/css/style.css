@@ -166,6 +166,14 @@ h1 {
   color: #E4B7A0;
 }
 
+.carousel-item img {
+  max-height: 80vh;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
 .about-me-content {
   display: flex;
   justify-content: center;
