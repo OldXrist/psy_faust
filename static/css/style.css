@@ -274,6 +274,7 @@ h1 {
 .card-sub {
   color: #b2b0b0;
   font-size: 1rem;
+  text-align: center;
 }
 
 .card .btn {
@@ -467,7 +468,7 @@ h1 {
   }
 
   .services .card-group {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .services .card-group .card {
@@ -513,6 +514,10 @@ h1 {
   .timeline {
     max-width: unset;
   }
+
+  .carousel-item img {
+    max-height: 30vh;
+}
 
   .accordion-button {
     font-size: 1.25rem;
