@@ -120,7 +120,7 @@ h2 {
 }
 
 .hero p {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #E4B7A0;
 }
 
@@ -526,6 +526,10 @@ h1 {
   h3 {
     font-size: 1.5rem;
   }
+
+  .hero p {
+  font-size: 2rem;
+}
 
   .block {
     min-height: auto;
