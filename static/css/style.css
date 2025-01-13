@@ -16,6 +16,7 @@ h3 {
 
 header {
   font-size: 1rem;
+  font-weight: 500;
 }
 
 header img {
@@ -173,7 +174,6 @@ h1 {
 }
 
 .about-me {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -211,11 +211,14 @@ h1 {
 
 .about-me-btn a {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .about-me-btn .btn {
   font-size: 1.5rem;
-  width: 100%;
+  width: 80%;
 }
 
 .timeline {
