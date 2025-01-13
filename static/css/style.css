@@ -107,18 +107,16 @@ h2 {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  padding: 80px 0;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/static/img/vp.jpg");
   background-attachment: fixed;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.hero .container {
-  position: relative;
-  z-index: 3;
+.hero-container {
+  padding: 0 3rem 7rem 3rem;
 }
 
 .hero p {
@@ -174,6 +172,13 @@ h1 {
   margin: auto;
 }
 
+.about-me {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .about-me-content {
   display: flex;
   justify-content: center;
@@ -194,14 +199,23 @@ h1 {
   justify-content: space-around;
 }
 
+.about-me-text p {
+  margin: 0;
+}
+
 .about-me-btn {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  width: 100%;
+}
+
+.about-me-btn a {
+  width: 100%;
 }
 
 .about-me-btn .btn {
   font-size: 1.5rem;
+  width: 100%;
 }
 
 .timeline {
@@ -427,6 +441,14 @@ h1 {
 }
 
 @media (max-width: 1200px) {
+  .viewport br {
+    display: none;
+  }
+
+  .hero {
+    background-size: auto;
+  }
+
   .services .card-group {
     flex-direction: column;
     align-items: center;
@@ -437,9 +459,21 @@ h1 {
     max-width: 80%;
   }
 
+  .about-me-content {
+    flex-direction: column;
+  }
+
+  .about-me-content img {
+    max-width: unset;
+  }
+
   .about-me-content p {
     font-size: unset;
-}
+  }
+
+  .about-me-btn {
+    padding-top: 2rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -447,12 +481,8 @@ h1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/static/img/vp.jpg");
   }
 
-  .about-me-content {
-    flex-direction: column;
-  }
-
-  .about-me-content img {
-    max-width: unset;
+  .hero-container {
+    padding: 0 1rem 5rem 1rem;
   }
 
   .header-dt {
