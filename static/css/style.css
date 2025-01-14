@@ -286,6 +286,7 @@ h1 {
 .card-desc {
   text-align: center;
   font-size: 1rem;
+  min-height: 72px;
 }
 
 .card-sub {
@@ -300,6 +301,7 @@ h1 {
 
 .services .card-group {
   display: flex;
+  flex: 1 1 0;
   gap: 50px;
   align-items: center;
 }
