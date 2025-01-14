@@ -362,6 +362,8 @@ h1 {
   min-width: 300px;
   min-height: 200px;
   border: 1px solid #E4B7A0;
+  display: flex;
+  gap: .5rem;
 }
 
 .contact-card:hover {
