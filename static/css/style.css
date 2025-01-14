@@ -301,9 +301,12 @@ h1 {
 
 .services .card-group {
   display: flex;
-  flex: 1 1 0;
   gap: 50px;
   align-items: center;
+}
+
+.card-group .card {
+  flex: 1 1 30%;
 }
 
 .services .card-price {
@@ -464,7 +467,7 @@ h1 {
   }
 
   .services .card-group .card {
-    max-width: 80%;
+    width: 100%;
   }
 
   .about-me-content {
