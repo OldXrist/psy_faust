@@ -16,8 +16,8 @@ class Qualifications(models.Model):
 
 class Services(models.Model):
     title = models.CharField(verbose_name='Название услуги', max_length=22)
-    time = models.IntegerField(verbose_name='Продолжительность сессии')
-    price = models.IntegerField(verbose_name='Стоимость услуги', max_length=5)
+    time = models.IntegerField(verbose_name='Продолжительность сессии(минуты)')
+    price = models.IntegerField(verbose_name='Стоимость услуги')
     desc = models.CharField(verbose_name='Описание', max_length=100)
 
     def __str__(self):
