@@ -14,6 +14,20 @@ class Qualifications(models.Model):
         verbose_name_plural = 'Квалификации'
 
 
+class Services(models.Model):
+    title = models.CharField(verbose_name='Название услуги', max_length=22)
+    time = models.IntegerField(verbose_name='Продолжительность сессии')
+    price = models.IntegerField(verbose_name='Стоимость услуги', max_length=5)
+    desc = models.CharField(verbose_name='Описание', max_length=100)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Услуга'
+        verbose_name_plural = 'Услуги'
+
+
 class FAQ(models.Model):
     title = models.CharField(verbose_name='Вопрос', max_length=150)
     content = models.TextField(verbose_name='Содержание', max_length=500)
