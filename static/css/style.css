@@ -348,6 +348,7 @@ h1 {
 
 .contact-cards {
   display: flex;
+  flex: 1 1 0;
   flex-direction: column;
   gap: 20px;
 }
@@ -548,6 +549,11 @@ h1 {
   .contact-card {
     width: -webkit-fill-available;
     min-width: auto;
+    min-height: 150px;
+  }
+
+  .contact-card h5 {
+    font-size: 1.25rem;
   }
 
   .timeline {
@@ -560,10 +566,6 @@ h1 {
 
   .accordion-button {
     font-size: 1.25rem;
-  }
-
-  .contact-card {
-    min-height: 150px;
   }
 
   footer .col-md-2 {
