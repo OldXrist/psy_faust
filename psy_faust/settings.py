@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "y1oooq@&zjs!q+-wsivcgl!^hmoe49)d^-c-cm_9vszpy#7^&a"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['217.25.93.237']
+ALLOWED_HOSTS = ['192.168.1.62']
 
 
 # Application definition
@@ -118,7 +118,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = "/var/www/psy_faust/assets/"
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
@@ -130,9 +129,12 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Production setup
+
+'''
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
 SECURE_HSTS_SECONDS = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
+'''
