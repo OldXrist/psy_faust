@@ -32,7 +32,7 @@ Before starting, ensure you have the following installed on your system:
 1. **Clone the Repository**  
    ```bash
    git clone https://github.com/OldXrist/psy_faust.git
-   cd psychologist-website
+   cd psy_faust
    ```
 
 2. **Create and Activate a Virtual Environment**  
