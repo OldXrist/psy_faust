@@ -1,0 +1,21 @@
+[project]
+name = "psy-faust"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Igor",email = "104066443+OldXrist@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "asgiref (==3.8.1)",
+    "django (==5.1.2)",
+    "pillow (==11.0.0)",
+    "sqlparse (==0.5.1)",
+    "tzdata (==2024.2)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

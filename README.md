@@ -43,7 +43,8 @@ Before starting, ensure you have the following installed on your system:
 
 3. **Install Dependencies**  
    ```bash
-   pip install -r requirements.txt
+   pip install poetry
+   poetry install
    ```
 
 4. **Set Up the Database**  
