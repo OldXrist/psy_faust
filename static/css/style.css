@@ -200,7 +200,8 @@ h1 {
 .about-me-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-bottom: 3rem;
 }
 
 .about-me-text p {
