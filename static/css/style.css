@@ -59,7 +59,7 @@ a:hover {
 .btn {
   border: 1px solid #E4B7A0;
   color: #E4B7A0;
-  border-radius: 0;
+  border-radius: 12px;
 }
 
 .btn:hover {
@@ -280,7 +280,7 @@ h1 {
   border: 1px solid;
   text-align: center;
   margin-top: 15px;
-  border-radius: 0;
+  border-radius: 12px;
 }
 
 .card-title {
@@ -374,6 +374,7 @@ h1 {
   border: 1px solid #E4B7A0;
   display: flex;
   gap: .5rem;
+  border-radius: 12px;
 }
 
 .contact-card:hover {

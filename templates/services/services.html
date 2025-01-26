@@ -5,7 +5,7 @@
     </div>
     <div class="container card-group">
         {% for service in services %}
-            <div class="card" {% if not forloop.first %} style="border-left: 1px solid #E4B7A0" {% endif %}>
+            <div class="card" style="border-radius: 12px; {% if not forloop.first %} border-left: 1px solid #E4B7A0;{% endif %}">
                 <h5 class="card-title">{{ service.title }}</h5>
                 <h6 class="card-sub">Продолжительность сессии: <br>{{ service.time }} минут</h6>
                 <h3 class="card-price my-5">₽ {{ service.price }}</h3>
